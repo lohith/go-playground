@@ -1,17 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/lohith/go-playground/testing/math"
+)
 
 func main() {
-	fmt.Println("2 + 3 =", mySum(2, 3))
-	fmt.Println("4 + 7 =", mySum(4, 7))
-	fmt.Println("5 + 9 =", mySum(5, 9))
-}
-
-func mySum(xi ...int) int {
-	sum := 0
-	for _, v := range xi {
-		sum += v
-	}
-	return sum
+	fmt.Println("2 + 3 =", math.MySum(2, 3))
+	fmt.Println("4 + 7 =", math.MySum(4, 7))
+	fmt.Println("5 + 9 =", math.MySum(5, 9))
 }
